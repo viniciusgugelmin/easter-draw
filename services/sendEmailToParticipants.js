@@ -17,7 +17,6 @@ export const sendEmailToParticipants = () => {
     const text = JSON.stringify(data).replace("{", "").replace("}", "");
 
     sendEmail({ name, email }, text, html);
-    break;
   }
 };
 
